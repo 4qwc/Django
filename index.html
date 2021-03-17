@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>index</title>
+
+	<script>
+    setTimeout(function(){
+        window.location.href = '/2021/march/';
+    }, 1000);
+</script>
+
+</head>
+<body>
+	<center>
+	<h1 style="color: red"; 
+
+	>INDEX PAGE</h1>
+	<h2 style="color: gray">Hello:
+	 {{ name }} {{ lastname }}
+	 {{ year }} {{ month }} </h2>
+
+	<h3 style="color: green">{{ cal|safe }}</h3>
+	<h1 style="color: blue">{{ time }}</h1>
+	<label style="color: gray">Copyright (c) {{ current_year}}</label>
+	</center>
+	
+</body>
+</html>

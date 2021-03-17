@@ -1,0 +1,96 @@
+C:\Users\Kannatham\Desktop\Django School
+
+1.pip install virtualenv #คำสั่งติดตั้ง
+
+2.virtualenv venv # คำสั่ง สร้าง venv
+.\scripts\activate #แอคติเวท เข้าใช้งาน.ใน venv
+
+3. djangoschool # สร้าง djangoschool
+cd floder project
+
+4.python manage.py runserver #รันเซฟเวอร์
+
+5.set at settings.py Allowhost = ['*']
+
+6.double click ngrok
+
+7.ngrok http 8000
+
+8.copy url and send to your frind
+
+9.python manage.py startapp inventory # สร้างแอพ inventory
+
+--------------------------------
+10.python manage.py makemigrations
+
+11.python manage.py migrate /// สร้างระบบ พาสเวิร์ด
+
+12.python manage.py createsuperuser
+--------------------------------
+after create models
+13.python manage.py makemigrations
+14.python manage.py migrate
+
+
+https://www.w3schools.com/bootstrap4/
+
+
+python manage.py migrate 
+mkvirtualenv
+
+
+django-admin startproject djangoschool
+
+
+#*********************************************************
+# การใช้งาน  black en หน้าเว็บ django แบบย่อๆ
+
+* ให้ติดตั้งและimport, pip, venv, ให้เสร็จเรียบร้อยก่อน
+ ขั้นตอนต่อไป
+#--------------------------------/
+1.ไปที่โปรเจค app ที่เราสร้างขึ้นมา -
+	-setting.py
+		INSTALLED_APP = [
+	เพิ่ม ' ชื่อ -app ที่สร้างขึ้นในโปรเจค '
+	]
+
+
+#--------------------------------/
+2.0 เปิด urls.py ในหน้าที่มี setting.py
+ 
+	from django.contrib import admin
+	from django.urls import path, include
+
+     urlpatterns = [
+   	 path('admin/', admin.site.urls),
+    	path('', include('events.urls')),
+        ]
+	#กำหนดหน้าโฮมเพจ หรือ หน้าเพจที่ต้องการ
+
+#--------------------------------/
+2.1 เปิด urls.py ในหน้า โปรเจค แอพที่สร้างขึ้นมา
+	from django.urls import path
+	from import views
+    urlpatterns = [
+	path('', views.home, name="home"),
+	]
+	#กำหนดหน้าโฮมเพจ หรือ หน้าเพจที่ต้องการ
+
+
+#--------------------------------/
+3.เปิด views.py
+	from django.shortcuts import runder
+def home(request):
+	retrun runder(request, 'home.html', {})
+
+
+
+#--------------------------------/	
+4.สร้างโฟเดอร์  ชื่อ templates ในโปรเจคแอพ
+	สร้างไฟล์ home.html  ใน templates 
+	* ใสรายระเอียดใน home.html
+
+
+
+
+#--------------------------------------------
