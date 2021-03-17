@@ -1,6 +1,6 @@
 C:\Users\Kannatham\Desktop\Django School
 
-1.pip install virtualenv #คำสั่งติดตั้ง
+1.pip install virtualenv #คำสั่งติดตั้งใน วินโว์
 
 2.virtualenv venv # คำสั่ง สร้าง venv
 .\scripts\activate #แอคติเวท เข้าใช้งาน.ใน venv
