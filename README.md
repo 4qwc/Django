@@ -29,9 +29,9 @@ python manage.py migrate
 
 --------------------------------
 ���ҧ user �ͧ admin
-python manage.py createsuperuser
-*** user: admin
-*** password: ���������� ��������
 
-�����ѧ django admin ��ҹ webbrowser
-localhost:8000/admin
+***************************************
+for windows
+python -m virtualenv
+python -m virtualenv venv
+.\venv\scripts\activate
