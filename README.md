@@ -35,3 +35,8 @@ for windows
 python -m virtualenv
 python -m virtualenv venv
 .\venv\scripts\activate
+
+หลังจากสร้าง models เสร็จให้รัน 2 คำสั่งที่สำคัญคือ
+python manage.py makemigrations
+python manage.pt migrate
+
